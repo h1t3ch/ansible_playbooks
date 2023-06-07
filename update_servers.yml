@@ -1,6 +1,6 @@
 ---
 - hosts: servers
-  become: root
+  become: 
   tasks:
   - name: Update apt repo and cache on all Ubuntu servers
     apt: update_cache=yes force_apt_get=yes cache_valid_time=3600
