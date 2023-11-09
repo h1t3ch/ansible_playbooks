@@ -1,4 +1,6 @@
 - hosts: servers
+  become: yes
+  become_method: sudo
   user: h1t3ch
   tasks:
     - name: Stop the semaphore_mysql_1 container
