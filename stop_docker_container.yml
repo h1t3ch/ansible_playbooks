@@ -1,4 +1,4 @@
-- hosts: dockerserver
+- hosts: dockserver
   user: ansible
   tasks:
     - name: Stop the semaphore_mysql_1 container
