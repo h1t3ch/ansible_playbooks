@@ -1,4 +1,4 @@
-- hosts: 192.168.58.21
+- hosts: dockerserver
   user: ansible
   tasks:
     - name: Stop the semaphore_mysql_1 container
