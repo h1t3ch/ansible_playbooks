@@ -1,5 +1,5 @@
-- hosts: ${{ secrets.SERVER_IP }}
-  user: ${{ secrets.USER }}
+- hosts: "${{ secrets.SERVER_IP }}"
+  user: "${{ secrets.USER }}"
   tasks:
     - name: Stop the semaphore_mysql_1 container
       docker_container:
