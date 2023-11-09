@@ -1,0 +1,7 @@
+- hosts: docker
+  user: ansible
+  tasks:
+    - name: Stop the http_server1 container
+      docker_container:
+        name: http_server1
+        state: stopped
